@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.navbar{
+    background-color: #001F3F;
+}
+
+#Contact-Me{
+    background-color: #3A6D8C;
+}
+
+#Contact-Me a, 
+#Contact-Me p {
+    color: #EAD8B1;
+}
+
+#Contact-Me a:hover {
+   color: #ead8b1c0;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: #EAD8B1;
+    background-color: #001F3F;
+}
+
+#new-skill-input, .skill-and-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#add-skill-button, .remove-skill-button {
+    margin-left: 10px;
+}

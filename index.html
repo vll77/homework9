@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vance's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Vance's Portfolio</a>
+          <a id="download-button" href="./Files/Vance-Dummy-Resume.docx" download="Vance-Lambert-Resume"><button class="btn btn-primary rounded-pill px-3" type="button">Download Resume</button></a>
+          <p class="download-count">Download Count: 0</p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="navbar-container" class="navbar-nav ms-auto">
+              <!--Navbar items from JS go here-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <main class="container">
+
+    <div id="Greeting">
+      <h3>Greeting</h3>
+      <!--Personalized greeting coming from JS will go here-->
+      <p></p>
+    </div>
+      
+    <div id="Introduction" class="mb-5">
+        <h3>Introduction</h3>
+        <video width="500" height="500" controls>
+            <source src="./Files/iPhone.mp4" type="video/mp4">
+            <source src="./Files/iPhone.mov" type="vido/mov">
+        </video>
+    </div>
+     
+    <div id="Education-and-Experience" class="mb-5">
+        <h3>Education and Experience</h3>
+        <table class="table table-bordered border-primary-subtle">
+            <thead>
+              <tr>
+                <th scope="col">School/Company</th>
+                <th scope="col">Position/Degree</th>
+                <th scope="col">Years Attended</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr class="table-active">
+                <th scope="row" rowspan="2">Northern Arizona University</th>
+                <td>Computer Engineering (BS)</td>
+                <td rowspan="2">2017-2021</td>
+                <td rowspan="2">N/A</td>
+              </tr>
+              <tr class="table-active">
+                <td>Exercise Science (BS)</td>
+              </tr>
+              <tr>
+                <th scope="row">Arizona State University</th>
+                <td>Master of Computer Science (MCS)</td>
+                <td>2021-2023</td>
+                <td>N/A</td>
+              </tr>
+              <tr class="table-active">
+                <th scope="row">Hewlett-Packard</th>
+                <td>Master of Computer Science (MCS)</td>
+                <td>2021-2023</td>
+                <td>N/A</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <div id=Skills class="mb-5">
+        <h3>Skills</h3>
+        <div id="new-skill-input">
+          <input id="skill-input-box" type="text" placeholder="Input new skill">
+          <button id="add-skill-button">Add</button>
+        </div>
+        <ul class="list-group">
+          <!--List Items from JS go here-->
+        </ul>
+    </div>
+
+    <div id="Projects">
+        <h3>Projects</h3>
+
+        <div class="card-group">
+          <!--Contents of each card is updated by JS-->
+            <div class="card">
+                <img src="" class="card-img-top img-fluid" alt="">
+                <div class="card-body">
+                <h5 class="card-title"></h5>
+                <h5 class="card-status"></h5>
+                <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="" class="card-img-top img-fluid" alt="">
+                <div class="card-body">
+                <h5 class="card-title"></h5>
+                <h5 class="card-status"></h5>
+                <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="" class="card-img-top img-fluid" alt="">
+                <div class="card-body">
+                <h5 class="card-title"></h5>
+                <h5 class="card-status"></h5>
+                <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Contact-Me">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 mb-0 text-muted">
+                    <p>Contact Us</p>
+                    <p>Phone: <a href="callto:555-555-5555">555-555-5555</a></p>
+                    <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+                    <p>Address: 123 Main St, Anytown, USA</p>
+                  </div>
+            </footer>
+          </div>
+    </div>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
